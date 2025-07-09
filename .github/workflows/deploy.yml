@@ -21,8 +21,7 @@ jobs:
         
     - name: Setup pnpm
       uses: pnpm/action-setup@v4
-      with:
-        version: 10
+      # Se elimina la versión explícita para evitar conflicto
         
     - name: Install dependencies
       run: pnpm install
